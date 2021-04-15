@@ -51,13 +51,19 @@ def addToRepo( person: Person):
     _personCollection.append(person)
 def getRepo() -> List[Person]:
     return _personCollection.copy()
+
+
 def findInRepo(predicateFunction: Callable[[Person],bool]) -> List[Person]:
     return [potential for potential in _personCollection if (predicateFunction(potential)) ]
+
+
+    
 def removeFromRepo(person:Person):
     _personCollection.remove(person)
 
 def _doSomthingWithTeacher(teahcer :Teacher):
     print(teahcer.printName())
+
 
 # This would warn over a type issue but will still work if executed
 # _doSomthingWithTeacher(Student("FirstName","LastName"))

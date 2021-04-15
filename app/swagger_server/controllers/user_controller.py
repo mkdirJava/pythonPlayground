@@ -31,6 +31,7 @@ def delete_user(username):  # noqa: E501
 
     :rtype: None
     """
+    
     return 'do some magic!'
 
 
@@ -46,7 +47,7 @@ def get_all_user():  # noqa: E501
     addToRepo(student)
     personList = getRepo()
     print(personList)
-    return 'do some magic! HOME, 20'
+    return 'do some magic! HOME, 20, finally the debug, right after a dmeo too '
 
 
 def get_user_by_name(username):  # noqa: E501
